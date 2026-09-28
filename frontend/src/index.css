@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-sans: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  /* Font Sizes */
+  --text-xs: 11px;
+  --text-xs--letter-spacing: 0.05em;
+  --text-xs--line-height: 16px;
+  
+  --text-sm: 12px;
+  --text-sm--line-height: 18px;
+  
+  --text-base: 13px;
+  --text-base--line-height: 20px;
+  
+  --text-lg: 14px;
+  --text-lg--line-height: 22px;
+  
+  --text-xl: 16px;
+  --text-xl--line-height: 24px;
+  
+  --text-2xl: 20px;
+  --text-2xl--line-height: 28px;
+  
+  --text-3xl: 28px;
+  --text-3xl--line-height: 36px;
+  --text-3xl--letter-spacing: -0.02em;
+
+  /* Colors */
+  --color-canvas: #F3F1EC;
+  --color-surface: #FBFAF7;
+  --color-surface-raised: #FFFFFF;
+  
+  --color-ink: #14212B;
+  --color-ink-muted: #5B6B76;
+  --color-ink-faint: #8C99A2;
+  
+  --color-line: #E2DED5;
+  
+  --color-sidebar: #0E2A30;
+  --color-sidebar-text: #C9D6D8;
+  --color-sidebar-active: #163F47;
+  
+  --color-primary: #0F6B6E;
+  --color-primary-hover: #0B5558;
+  
+  --color-attention: #E39A12;
+
+  --color-condition-excellent: #2E7D5B;
+  --color-condition-good: #8BA63A;
+  --color-condition-fair: #E3B02F;
+  --color-condition-poor: #D9682B;
+  --color-condition-critical: #B3261E;
+
+  --color-status-planned: #7A8794;
+  --color-status-in-service: #0F6B6E;
+  --color-status-under-maintenance: #E39A12;
+  --color-status-decommissioned: #5B6B76;
+  --color-status-disposed: #A9B2B9;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* Shadows */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  /* Transitions */
+  --default-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  --default-transition-duration: 150ms;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
